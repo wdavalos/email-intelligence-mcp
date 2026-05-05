@@ -1,0 +1,64 @@
+# Email Intelligence MCP
+
+Find, verify, and pattern-detect business email addresses for AI agents doing outbound sales, recruitment, and lead generation.
+
+## When to call
+
+Use this MCP when you need to:
+- Find a person's business email from their name and company domain
+- Verify an email address is deliverable before sending outreach
+- Detect what email format a company uses (first.last@domain vs fLast@domain)
+
+## Tools
+
+| Tool | Price | Description |
+|------|-------|-------------|
+| find_email | $0.05 | Find email from name + domain using Hunter.io → Clearbit → pattern waterfall |
+| verify_email | $0.02 | Verify deliverability via MX lookup + SMTP connectivity check |
+| detect_pattern | $0.02 | Detect company email format from domain using WHOIS + common patterns |
+
+## Example AI Prompt
+
+"Find the email address for Sarah Chen at Stripe, if it exists."
+
+## Example AI Prompt
+
+"Verify these emails before we send the campaign: john@company.com, jane@company.com, invalid-email@not-a-domain.xyz"
+
+## Example AI Prompt
+
+"What is the email format at Shopify? Are they using first.last or first.last@shopify.com?"
+
+---
+
+## MCP Server Details
+
+**Endpoint:** `https://email-intelligence-mcp.apify.actor/mcp`
+**Apify Store:** https://apify.com/red-cars-io/email-intelligence-mcp
+
+## Quick Start
+
+```json
+{
+  "mcpServers": {
+    "email-intelligence-mcp": {
+      "url": "https://email-intelligence-mcp.apify.actor/mcp?token=YOUR_APIFY_TOKEN"
+    }
+  }
+}
+```
+
+No API key required for basic MX verification. AI agents can call tools directly via the MCP protocol.
+
+## Data Sources
+
+| Source | Records |
+|--------|---------|
+| Hunter.io | Email finder + domain search (free tier) |
+| Clearbit | Person/company data (free tier) |
+| DNS/MX | Built-in Node.js |
+| WHOIS | Company name lookup |
+
+## SEO Keywords
+
+email finder MCP, email verification API, MX lookup, SMTP verification, company email pattern, detect email format, Hunter.io alternative, Clearbit alternative, AI agent email tools, MCP email server, B2B email discovery, outreach automation, sales email lookup, lead generation, AI agent, LLM email tools, Claude email search, Cursor email assistant, sales intelligence automation, due diligence email

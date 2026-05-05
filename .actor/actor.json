@@ -1,0 +1,25 @@
+{
+  "actorSpecification": 1,
+  "name": "email-intelligence-mcp",
+  "title": "Email Intelligence MCP",
+  "description": "Find, verify, detect email patterns. For AI agents.",
+  "version": "1.0",
+  "meta": {
+    "templateId": "standby-python"
+  },
+  "input": "../input_schema.json",
+  "readme": "../README.md",
+  "categories": [
+    "DEVELOPER_TOOLS",
+    "DATA"
+  ],
+  "pricing": {
+    "model": "PAY_PER_EVENT"
+  },
+  "defaultRunOptions": {
+    "memoryMbytes": 512,
+    "timeoutSecs": 60
+  },
+  "usesStandbyMode": true,
+  "webServerMcpPath": "/mcp"
+}

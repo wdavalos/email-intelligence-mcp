@@ -1,0 +1,22 @@
+{
+  "title": "Email Intelligence MCP",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "tool": {
+      "title": "Tool Name",
+      "type": "string",
+      "description": "MCP tool to call",
+      "enum": ["find_email", "verify_email", "detect_pattern"],
+      "editor": "select",
+      "prefill": "find_email"
+    },
+    "params": {
+      "title": "Parameters (JSON)",
+      "type": "object",
+      "description": "Tool parameters as JSON object",
+      "editor": "json",
+      "prefill": {"full_name": "John Smith", "domain": "example.com"}
+    }
+  }
+}
