@@ -1,1 +1,7 @@
 node_modules/
+dist/
+.env
+.apify/
+storage/
+*.log
+.DS_Store

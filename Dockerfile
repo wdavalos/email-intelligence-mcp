@@ -1,14 +1,12 @@
-FROM apify/actor-python:3.14
+FROM apify/actor-node:20
 
-COPY --chown=myuser:myuser requirements.txt ./
+WORKDIR /usr/src/app
 
-RUN echo "Python version:" && python --version \
-    && pip --version \
-    && pip install -r requirements.txt \
-    && echo "All installed Python packages:" && pip freeze
+COPY package.json ./
+RUN npm install
 
-COPY --chown=myuser:myuser . ./
+COPY . .
 
-RUN python -m compileall -q .
+RUN npm run build
 
-CMD ["python", "-m", "email_intelligence_mcp"]
+CMD ["node", "dist/main.js"]
