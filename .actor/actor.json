@@ -3,7 +3,7 @@
     "actorSpecification": 1,
     "name": "email-intelligence-mcp",
     "title": "Email Intelligence MCP",
-    "version": "1.0.0",
+    "version": "1.0",
     "description": "Find, verify, detect email patterns for AI agents. Waterfall: Hunter.io → Clearbit → MX lookup.",
     "buildTag": "latest",
     "usesStandbyMode": true,

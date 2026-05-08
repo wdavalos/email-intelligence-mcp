@@ -1,6 +1,6 @@
 {
   "name": "email-intelligence-mcp",
-  "version": "1.0.0",
+  "version": "1.0",
   "type": "module",
   "description": "Email Intelligence MCP — AI agent MCP server for email discovery, verification, and pattern detection via Hunter.io, Clearbit, and MX lookup.",
   "engines": {
