@@ -1,5 +1,6 @@
 # Email Intelligence MCP Server
 
+**Run it on the Apify Store:** https://apify.com/red.cars/email-intelligence-mcp
 > [ScraperFleet data page](https://scraperfleet.com/actors/email-intelligence-mcp/)
 > Find, verify, and pattern-detect business email addresses for AI agents.
 
